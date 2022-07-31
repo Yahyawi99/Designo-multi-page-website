@@ -1,4 +1,6 @@
 import React from "react";
+// css
+import "../styles/projects.css";
 
 const Projects = () => {
   return (
@@ -13,6 +15,8 @@ const Projects = () => {
             alt="right-arrow"
           />
         </div>
+
+        <span className="layer"></span>
       </div>
 
       <div className="app-design">
@@ -25,6 +29,8 @@ const Projects = () => {
             alt="right-arrow"
           />
         </div>
+
+        <span className="layer"></span>
       </div>
 
       <div className="graphic-design">
@@ -37,6 +43,8 @@ const Projects = () => {
             alt="right-arrow"
           />
         </div>
+
+        <span className="layer"></span>
       </div>
     </section>
   );
