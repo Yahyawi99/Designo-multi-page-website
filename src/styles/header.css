@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 75px 0px;
+}
+
+.logo {
+    width: 200px;
+}
+
+.links {
+    display: flex;
+    gap: 30px;
+    list-style-type: none;
+    letter-spacing: 2px;
+}
+
+.links .link {
+    font-weight: 400;
+}
+
+.links .link:hover {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+}

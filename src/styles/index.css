@@ -1,9 +1,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --peach: hsl(11, 73%, 66%);
+  --light-peach: hsl(11, 100%, 80%);
+  --black: hsl(270, 3%, 11%);
+  --dark-gray: hsl(264, 5%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --light-gray: hsl(210, 17%, 95%);
+}
+
 html {
   scroll-behavior: smooth;
 }
 
+
 body {
   font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+/* shared styles */
+.link {
+  text-decoration: none;
+  color: initial;
+  cursor: pointer;
+}
+
+button {
+  font-family: inherit;
 }
