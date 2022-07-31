@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from "react-router-dom";
 // css
-import "../styles/projects.css";
+import "../../styles/home/projects.css";
 
 const Projects = () => {
   return (
     <section className="projects">
-      <div className="web-design">
+      <Link to="" className="web-design link">
         <h1>WEB DESIGN</h1>
 
         <div>
@@ -17,9 +18,9 @@ const Projects = () => {
         </div>
 
         <span className="layer"></span>
-      </div>
+      </Link>
 
-      <div className="app-design">
+      <Link to="" className="app-design link">
         <h1>APP DESIGN</h1>
 
         <div>
@@ -31,9 +32,9 @@ const Projects = () => {
         </div>
 
         <span className="layer"></span>
-      </div>
+      </Link>
 
-      <div className="graphic-design">
+      <Link to="" className="graphic-design link">
         <h1>GRAPHIC DESIGN</h1>
 
         <div>
@@ -45,7 +46,7 @@ const Projects = () => {
         </div>
 
         <span className="layer"></span>
-      </div>
+      </Link>
     </section>
   );
 };

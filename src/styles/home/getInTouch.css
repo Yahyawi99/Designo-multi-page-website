@@ -1,0 +1,23 @@
+.getInTouch {
+    width: 85%;
+    background-color: var(--peach);
+    color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 275px;
+    border-radius: 20px;
+    position: sticky;
+    z-index: 10;
+    padding: 75px 0px;
+    margin: 0px auto;
+}
+
+.getInTouch h2 {
+    font-size: 2.5rem;
+    line-height: 40px;
+}
+
+.getInTouch h2:nth-child(2) {
+    margin-bottom: 25px;
+}

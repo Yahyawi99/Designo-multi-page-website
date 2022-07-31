@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
   margin: 0;
@@ -20,7 +20,7 @@ html {
 
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Jost', sans-serif;
 }
 
 
@@ -33,5 +33,22 @@ body {
 }
 
 button {
+  background-color: var(--white);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
   font-family: inherit;
+  letter-spacing: 2px;
+  transition: .25s;
+  padding: 20px 30px;
+}
+
+button:hover {
+  background-color: var(--light-peach);
+  color: var(--white);
+}
+
+ul {
+  list-style: none;
 }
