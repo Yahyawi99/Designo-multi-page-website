@@ -46,6 +46,7 @@
 @media screen and (min-width:0px) and (max-width:800px) {
     .intro {
         width: 100%;
+        min-height: 900px;
         max-height: calc(100vh - 112px);
         flex-direction: column;
         border-radius: 0px;
@@ -58,6 +59,7 @@
 
     .intro-txt>h1 {
         line-height: 50px;
+        text-align: center;
         margin: 0px 0px 0px 0px;
     }
 
@@ -80,6 +82,12 @@
 
     .image-hero>img {
         width: 100%;
-        margin: -100px 0px 0px 0px;
+        margin: -50px 0px 0px 0px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:800px) {
+    .image-hero>img {
+        margin: -125px 0px 0px 0px;
     }
 }

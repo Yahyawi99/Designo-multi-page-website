@@ -70,3 +70,35 @@
     align-self: flex-end;
     padding: 20px 40px;
 }
+
+/* *************** */
+/* media query */
+@media screen and (min-width:0px) and (max-width:800px) {
+    .contact-us {
+        width: 100%;
+        flex-direction: column;
+        gap: 75px;
+        border-radius: 0px;
+        padding: 50px 0px;
+    }
+
+    .contact-txt {
+        padding: 0px;
+    }
+
+    .contact-txt h1 {
+        text-align: center;
+    }
+
+    .contact-txt p {
+        width: 95%;
+        text-align: center;
+        line-height: 25px;
+        margin: 0px auto;
+    }
+
+    /* Form */
+    .contact-form {
+        padding: 0px 10px;
+    }
+}

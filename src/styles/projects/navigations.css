@@ -1,6 +1,7 @@
 .navigation-projects {
     width: 85%;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     margin: 0px auto 150px auto;
@@ -58,4 +59,29 @@
 /* Hover effect */
 .navigation:hover .layer {
     background-color: hsl(11, 73%, 66%, .5);
+}
+
+/* *************** */
+/* media query */
+@media screen and (min-width:0px) and (max-width:800px) {
+    .navigation-projects {
+        width: 100%;
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .navigation {
+        width: 80%;
+        font-size: .5rem;
+        border-radius: 20px;
+        position: relative;
+        margin: 0px auto;
+        padding: 50px 0px;
+    }
+
+    .navigation h1 {
+        font-size: 1rem;
+        font-weight: 500;
+        z-index: 10;
+    }
 }

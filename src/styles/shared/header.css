@@ -38,20 +38,27 @@
 @media screen and (min-width:0px) and (max-width:800px) {
     .main-header {
         width: 100%;
+        align-items: center;
         color: var(--white);
         margin: 0;
-        padding: 40px 0px;
+        padding: 30px 0px;
     }
 
     .main-header .logo {
         padding-left: 25px;
     }
 
+    .main-header .link {
+        display: flex;
+        align-items: center;
+    }
+
     .main-header nav {
         width: 100%;
         background-color: var(--black);
         position: absolute;
-        top: 113px;
+        top: 84px;
+        z-index: 10;
         visibility: hidden;
     }
 
@@ -72,5 +79,11 @@
 
     .main-header .links .link {
         font-size: 1.5rem;
+    }
+}
+
+@media screen and (min-width:0px) and (max-width:400px) {
+    .main-header .logo {
+        width: 150px;
     }
 }

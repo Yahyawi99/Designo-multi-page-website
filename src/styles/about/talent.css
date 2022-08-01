@@ -4,7 +4,6 @@
     border-radius: 20px;
     overflow: hidden;
     margin: 0px auto 150px auto;
-
 }
 
 .talent-txt {
@@ -28,4 +27,33 @@
 
 .talent-img {
     display: flex;
+}
+
+/* *************** */
+/* media query */
+@media screen and (min-width:0px) and (max-width:800px) {
+    .talent {
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+        margin: 0px auto 150px auto;
+    }
+
+    .talent-txt {
+        gap: 25px;
+        padding: 100px 0px;
+    }
+
+    .talent-txt h1 {
+        text-align: center;
+    }
+
+    .talent-txt p {
+        text-align: center;
+        max-width: 400px;
+    }
+
+    .talent-img img {
+        width: 100%;
+    }
 }
