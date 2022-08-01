@@ -19,11 +19,13 @@
 }
 
 .contact-txt h1 {
-    font-size: 2.5rem;
+    font-size: 2.75rem;
+    font-weight: 500;
 }
 
 .contact-txt p {
     line-height: 28px;
+    max-width: 700px;
 }
 
 /* form */
@@ -73,7 +75,7 @@
 
 /* *************** */
 /* media query */
-@media screen and (min-width:0px) and (max-width:800px) {
+@media screen and (min-width:0px) and (max-width:600px) {
     .contact-us {
         width: 100%;
         flex-direction: column;
@@ -100,5 +102,30 @@
     /* Form */
     .contact-form {
         padding: 0px 10px;
+    }
+}
+
+@media screen and (min-width:600px) and (max-width:1200px) {
+    .contact-us {
+        width: 95%;
+        max-width: 800px;
+        flex-direction: column;
+        gap: 50px;
+        padding: 50px 0px;
+        margin: 25px auto 150px auto;
+    }
+
+    .contact-txt h1,
+    .contact-txt p {
+        max-width: 600px;
+        text-align: center;
+    }
+
+    /* form */
+    .contact-form {
+        flex: .5;
+        display: flex;
+        flex-direction: column;
+        padding: 50px 100px;
     }
 }

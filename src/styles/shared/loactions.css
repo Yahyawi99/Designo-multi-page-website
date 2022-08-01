@@ -33,7 +33,7 @@
 
 /* ****************** */
 /* media query */
-@media screen and (min-width:0px) and (max-width:800px) {
+@media screen and (min-width:0px) and (max-width:1150px) {
     .locations {
         width: 100%;
         flex-direction: column;
