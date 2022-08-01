@@ -10,7 +10,7 @@ import Footer from "../components/shared/Footer";
 const Contact = () => {
   return (
     <section className="contact">
-      <Header logo="logo-dark.png" />
+      <Header logo="logo-dark.png" name="main-header" />
 
       <ContactUs />
 

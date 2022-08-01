@@ -11,7 +11,7 @@ import Footer from "../components/shared/Footer";
 const About = () => {
   return (
     <section className="about">
-      <Header logo="logo-dark.png" />
+      <Header logo="logo-dark.png" name="main-header" />
 
       <AboutUs />
 

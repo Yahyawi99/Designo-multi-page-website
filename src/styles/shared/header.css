@@ -10,6 +10,10 @@
     width: 200px;
 }
 
+.hamburger {
+    display: none;
+}
+
 .header .links {
     display: flex;
     gap: 30px;
@@ -26,4 +30,43 @@
 .links .link:hover {
     text-decoration: underline;
     text-underline-offset: 2px;
+}
+
+
+/* ***************** */
+/* media query */
+@media screen and (min-width:0px) and (max-width:800px) {
+    .main-header {
+        width: 100%;
+        margin: 0;
+        padding: 40px 0px;
+    }
+
+    .main-header .logo {
+        padding-left: 25px;
+    }
+
+    .main-header nav {
+        width: 100%;
+        background-color: var(--black);
+        position: absolute;
+        top: 113px;
+        /* padding: ; */
+    }
+
+    .main-header .hamburger {
+        display: flex;
+        padding-right: 25px;
+    }
+
+    .main-header .links {
+        flex-direction: column;
+        gap: 20px;
+        padding: 30px 40px;
+    }
+
+    .main-header .links .link {
+        color: var(--white);
+        font-size: 1.5rem;
+    }
 }

@@ -10,7 +10,7 @@ import Footer from "../components/shared/Footer";
 const Home = () => {
   return (
     <section className="home">
-      <Header logo="logo-dark.png" />
+      <Header logo="logo-dark.png" name="main-header" />
 
       <Intro />
 

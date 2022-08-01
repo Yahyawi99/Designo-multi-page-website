@@ -8,7 +8,7 @@ import Footer from "../components/shared/Footer";
 const Locations = () => {
   return (
     <section className="loactions-page">
-      <Header logo="logo-dark.png" />
+      <Header logo="logo-dark.png" class="main-header" />
 
       <Countries />
 

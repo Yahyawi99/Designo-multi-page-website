@@ -15,7 +15,7 @@ const Web = () => {
 
   return (
     <section className="project-page">
-      <Header logo="logo-dark.png" />
+      <Header logo="logo-dark.png" name="main-header" />
 
       <Intro data={IntroProjects} type={type} />
 
