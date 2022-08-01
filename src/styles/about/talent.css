@@ -1,0 +1,31 @@
+.talent {
+    width: 85%;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0px auto 150px auto;
+
+}
+
+.talent-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background-color: #fdf4f2;
+    padding: 0px 100px;
+}
+
+.talent-txt>h1 {
+    color: var(--peach);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.talent-txt>p {
+    line-height: 28px;
+}
+
+.talent-img {
+    display: flex;
+}

@@ -1,22 +1,16 @@
 import React from "react";
 // components
 import Header from "../components/shared/Header";
-import Intro from "../components/home/Intro";
-import Projects from "../components/home/Projects";
-import Description from "../components/home/Description";
+import Countries from "../components/locations/Countries";
 import GetInTouch from "../components/shared/GetInTouch";
 import Footer from "../components/shared/Footer";
 
-const Home = () => {
+const Locations = () => {
   return (
-    <section className="home">
+    <section className="loactions-page">
       <Header logo="logo-dark.png" />
 
-      <Intro />
-
-      <Projects />
-
-      <Description />
+      <Countries />
 
       <GetInTouch />
 
@@ -25,4 +19,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default Locations;

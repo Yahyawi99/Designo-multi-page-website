@@ -17,7 +17,7 @@ const Intro = () => {
           Find out more about our services.
         </p>
 
-        <Link to="">
+        <Link to="/about">
           <button type="button">LEARN MORE</button>
         </Link>
       </div>

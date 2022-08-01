@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 // css
-import "../../styles/home/getInTouch.css";
+import "../../styles/shared/getInTouch.css";
 
 const GetInTouch = () => {
   return (
@@ -16,7 +16,7 @@ const GetInTouch = () => {
         <p>our expertise can help your business grow.</p>
       </div>
 
-      <Link to="" className="link">
+      <Link to="/contact" className="link">
         <button className="get-in-touch-btn">GET IN TOUCH</button>
       </Link>
     </section>

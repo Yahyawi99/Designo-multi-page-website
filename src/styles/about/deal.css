@@ -1,0 +1,31 @@
+.deal {
+    width: 85%;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 0px auto 150px auto;
+}
+
+
+.deal-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 25px;
+    background-color: #fdf4f2;
+    padding: 0px 100px;
+}
+
+.deal h1 {
+    color: var(--peach);
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+.deal p {
+    line-height: 28px;
+}
+
+.deal-img {
+    display: flex;
+}

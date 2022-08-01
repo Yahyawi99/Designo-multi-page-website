@@ -6,7 +6,7 @@ import "../../styles/home/projects.css";
 const Projects = () => {
   return (
     <section className="projects">
-      <Link to="" className="web-design link">
+      <Link to="projects/web" className="web-design link">
         <h1>WEB DESIGN</h1>
 
         <div>
@@ -20,7 +20,7 @@ const Projects = () => {
         <span className="layer"></span>
       </Link>
 
-      <Link to="" className="app-design link">
+      <Link to="projects/app" className="app-design link">
         <h1>APP DESIGN</h1>
 
         <div>
@@ -34,7 +34,7 @@ const Projects = () => {
         <span className="layer"></span>
       </Link>
 
-      <Link to="" className="graphic-design link">
+      <Link to="projects/graphic" className="graphic-design link">
         <h1>GRAPHIC DESIGN</h1>
 
         <div>

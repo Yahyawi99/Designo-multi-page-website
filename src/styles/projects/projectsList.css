@@ -1,0 +1,52 @@
+.projects-list {
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 25px;
+    row-gap: 50px;
+    margin: 0px auto 150px auto;
+
+}
+
+.project {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.project img {
+    flex: 1;
+}
+
+.project>div {
+    background-color: #fdf4f2;
+    text-align: center;
+    transition: .25s;
+    padding: 30px 25px;
+}
+
+.project>div h1 {
+    color: var(--peach);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0px 0px 10px 0px;
+}
+
+.project>div p {
+    width: 95%;
+    text-align: center;
+}
+
+.project:hover div {
+    background-color: var(--peach);
+    color: var(--white);
+}
+
+.project:hover h1 {
+    color: var(--white);
+}
