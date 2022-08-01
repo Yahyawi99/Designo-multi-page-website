@@ -1,4 +1,5 @@
 import React from "react";
+import { useGlobal } from "../context";
 // css
 import "../styles/contact/contact.css";
 // components
@@ -8,9 +9,16 @@ import Locations from "../components/shared/Locations";
 import Footer from "../components/shared/Footer";
 
 const Contact = () => {
+  const { showNav, setShowNav } = useGlobal();
+
   return (
     <section className="contact">
-      <Header logo="logo-dark.png" name="main-header" />
+      <Header
+        logo="logo-dark.png"
+        name="main-header"
+        showNav={showNav}
+        setShowNav={setShowNav}
+      />
 
       <ContactUs />
 

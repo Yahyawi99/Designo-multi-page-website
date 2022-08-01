@@ -1,15 +1,18 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useGlobal } from "../../context";
 // css
 import "../../styles/shared/footer.css";
 // components
 import Header from "./Header";
 
 const Footer = () => {
+  const { setShowNav } = useGlobal();
+
   return (
     <footer>
       <div className="first-row">
-        <Header logo="logo-light.png" />
+        <Header logo="logo-light.png" showNav={true} />
       </div>
 
       <div className="second-row">

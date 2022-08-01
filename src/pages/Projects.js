@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
+import { useGlobal } from "../context";
 // data
 import { IntroProjects, AllProjects, ProjectsNavigation } from "../data";
 // components
@@ -12,10 +13,16 @@ import Footer from "../components/shared/Footer";
 
 const Web = () => {
   const { type } = useParams();
+  const { showNav, setShowNav } = useGlobal();
 
   return (
     <section className="project-page">
-      <Header logo="logo-dark.png" name="main-header" />
+      <Header
+        logo="logo-dark.png"
+        name="main-header"
+        showNav={showNav}
+        setShowNav={setShowNav}
+      />
 
       <Intro data={IntroProjects} type={type} />
 

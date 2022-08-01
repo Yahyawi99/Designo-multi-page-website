@@ -46,20 +46,40 @@
 }
 
 .projects>.link:nth-child(1) {
-    background: url("../../../public/assets/home/desktop/image-web-design-large.jpg");
+    background: url("../../../public/assets/home/desktop/image-web-design-large.jpg") center/cover no-repeat;
     grid-row-start: 1;
     grid-row-end: -1;
 }
 
 .projects>.link:nth-child(2) {
-    background: url("../../../public/assets/home/desktop/image-app-design.jpg");
+    background: url("../../../public/assets/home/desktop/image-app-design.jpg") center/cover no-repeat;
 }
 
 .projects>.link:nth-child(3) {
-    background: url("../../../public/assets/home/desktop/image-graphic-design.jpg");
+    background: url("../../../public/assets/home/desktop/image-graphic-design.jpg") center/cover no-repeat;
 }
 
 /* Hover effect */
 .projects>.link:hover .layer {
     background-color: hsl(11, 73%, 66%, .5);
+}
+
+/* *********************** */
+/* media query */
+@media screen and (min-width:0px) and (max-width:800px) {
+    .projects {
+        max-width: 400px;
+        font-size: 90%;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, minmax(0px, 300px));
+    }
+
+    .projects>.link:nth-child(1) {
+        grid-row-start: initial;
+        grid-row-end: initial;
+    }
+
+    .projects>.link h1 {
+        font-size: 2rem;
+    }
 }

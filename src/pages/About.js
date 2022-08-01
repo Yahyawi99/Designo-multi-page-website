@@ -1,4 +1,5 @@
 import React from "react";
+import { useGlobal } from "../context";
 // components
 import Header from "../components/shared/Header";
 import AboutUs from "../components/about/AboutUs";
@@ -9,9 +10,16 @@ import GetInTouch from "../components/shared/GetInTouch";
 import Footer from "../components/shared/Footer";
 
 const About = () => {
+  const { showNav, setShowNav } = useGlobal();
+
   return (
     <section className="about">
-      <Header logo="logo-dark.png" name="main-header" />
+      <Header
+        logo="logo-dark.png"
+        name="main-header"
+        showNav={showNav}
+        setShowNav={setShowNav}
+      />
 
       <AboutUs />
 

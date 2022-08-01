@@ -26,3 +26,20 @@
 .description-txt {
     line-height: 20px;
 }
+
+
+/* ******************* */
+/* media query */
+@media screen and (min-width:0px) and (max-width:800px) {
+    .description {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 75px;
+    }
+
+    .description>div {
+        width: 50%;
+        gap: 20px;
+    }
+}

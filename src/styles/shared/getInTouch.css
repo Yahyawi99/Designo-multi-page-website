@@ -21,3 +21,23 @@
 .getInTouch h2:nth-child(2) {
     margin-bottom: 25px;
 }
+
+/* ******************* */
+/* media query */
+@media screen and (min-width:0px) and (max-width:800px) {
+    .getInTouch {
+        width: 95%;
+        max-width: 500px;
+        flex-direction: column;
+        gap: 75px;
+        border-radius: 20px;
+        text-align: center;
+        padding: 75px 0px;
+        margin: 0px auto;
+    }
+
+    .getInTouch p {
+        width: 80%;
+        margin: 0px auto;
+    }
+}
