@@ -140,7 +140,7 @@ const ProjectsNavigation = [
     id: 1,
     type: "app",
     image: "/assets/home/desktop/image-app-design.jpg",
-    title: "APP",
+    title: "APP DESIGN",
   },
   {
     id: 2,

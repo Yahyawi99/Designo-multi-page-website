@@ -6,6 +6,7 @@ import { IntroProjects, AllProjects, ProjectsNavigation } from "../data";
 import Header from "../components/shared/Header";
 import Intro from "../components/projects/Intro";
 import ProjectList from "../components/projects/ProjectList";
+import Navigations from "../components/projects/Navigations";
 import GetInTouch from "../components/shared/GetInTouch";
 import Footer from "../components/shared/Footer";
 
@@ -19,6 +20,8 @@ const Web = () => {
       <Intro data={IntroProjects} type={type} />
 
       <ProjectList data={AllProjects} type={type} />
+
+      <Navigations data={ProjectsNavigation} type={type} />
 
       <GetInTouch />
 

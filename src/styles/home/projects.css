@@ -60,14 +60,6 @@
 }
 
 /* Hover effect */
-.projects>.link:nth-child(1):hover .layer {
-    background-color: hsl(11, 73%, 66%, .5);
-}
-
-.projects>.link:nth-child(2):hover .layer {
-    background-color: hsl(11, 73%, 66%, .5);
-}
-
-.projects>.link:nth-child(3):hover .layer {
+.projects>.link:hover .layer {
     background-color: hsl(11, 73%, 66%, .5);
 }
