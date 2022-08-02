@@ -3,10 +3,12 @@
     background-color: var(--peach);
     color: var(--white);
     display: flex;
+    justify-content: center;
+    align-items: center;
     border-radius: 20px;
     overflow: hidden;
     margin: 0px auto 150px auto;
-    padding: 10px 0px;
+    padding: 25px 0px;
 }
 
 .contact-txt {
@@ -15,16 +17,17 @@
     flex-direction: column;
     justify-content: center;
     gap: 10px;
-    padding: 0px 100px;
+    padding: 0px 75px;
 }
 
 .contact-txt h1 {
-    font-size: 2.75rem;
+    font-size: 3.5rem;
     font-weight: 500;
 }
 
 .contact-txt p {
     line-height: 28px;
+    font-size: 1.1rem;
     max-width: 700px;
 }
 
@@ -33,7 +36,7 @@
     flex: .5;
     display: flex;
     flex-direction: column;
-    padding: 50px 100px 50px 0px;
+    padding: 25px 75px 25px 0px;
 }
 
 .contact-form input,
@@ -48,7 +51,7 @@
     resize: vertical;
     outline: none;
     padding: 0px 0px 10px 0px;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .contact-form input:focus,
@@ -101,6 +104,7 @@
 
     /* Form */
     .contact-form {
+        width: 95%;
         padding: 0px 10px;
     }
 }
@@ -108,7 +112,7 @@
 @media screen and (min-width:600px) and (max-width:1200px) {
     .contact-us {
         width: 95%;
-        max-width: 800px;
+        max-width: 700px;
         flex-direction: column;
         gap: 50px;
         padding: 50px 0px;
@@ -123,9 +127,10 @@
 
     /* form */
     .contact-form {
+        width: 75%;
         flex: .5;
         display: flex;
         flex-direction: column;
-        padding: 50px 100px;
+        padding: 50px 0px;
     }
 }

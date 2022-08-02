@@ -81,3 +81,33 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .countries {
+        width: 100%;
+        max-width: 700px;
+        gap: 100px;
+    }
+
+    .country {
+        width: 100%;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .country-info {
+        min-height: 300px;
+        padding: 0px 0px 0px 75px;
+    }
+
+    /* Image */
+    .country-map {
+        height: 300px;
+        border-radius: 20px;
+        order: -1;
+    }
+
+    .country-map img {
+        width: 100%;
+    }
+}

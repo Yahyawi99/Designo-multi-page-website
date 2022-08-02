@@ -62,3 +62,35 @@
         width: 100%;
     }
 }
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    .deal {
+        width: 100%;
+        max-width: 700px;
+        flex-direction: column;
+        border-radius: 20px;
+    }
+
+    .deal-txt {
+        align-items: center;
+        gap: 25px;
+        padding: 100px 0px;
+    }
+
+    .deal-txt h1 {
+        text-align: center;
+    }
+
+    .deal-txt p {
+        max-width: 400px;
+        text-align: center;
+    }
+
+    .deal-img {
+        order: -1;
+    }
+
+    .deal-img img {
+        width: 100%;
+    }
+}

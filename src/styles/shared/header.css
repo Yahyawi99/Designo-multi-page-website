@@ -58,6 +58,7 @@
         background-color: var(--black);
         position: absolute;
         top: 84px;
+        left: 0;
         z-index: 10;
         visibility: hidden;
     }
@@ -88,8 +89,9 @@
     }
 }
 
-@media screen and (min-width:600px) and (max-width:1200px) {
+@media screen and (min-width:800px) and (max-width:1200px) {
     .main-header {
-        max-width: 800px;
+        max-width: 700px;
+        margin: 50px auto;
     }
 }

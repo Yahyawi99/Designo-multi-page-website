@@ -78,3 +78,13 @@ footer .header {
         margin-left: 0;
     }
 }
+
+@media screen and (min-width:800px) and (max-width:1200px) {
+    footer {
+        padding: 175px 10px 75px 10px;
+    }
+
+    .second-row ul:nth-child(1) {
+        margin: 0px 60px 0px 0px;
+    }
+}
