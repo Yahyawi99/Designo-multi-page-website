@@ -152,7 +152,7 @@ const ProjectsNavigation = [
     id: 3,
     type: "graphic",
     image: "/assets/home/desktop/image-graphic-design.jpg",
-    title: "GRAPHIC",
+    title: "GRAPHIC DESIGN",
   },
 ];
 

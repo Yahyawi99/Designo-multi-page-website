@@ -16,7 +16,13 @@ const GetInTouch = () => {
         <p>our expertise can help your business grow.</p>
       </div>
 
-      <Link to="/contact" className="link">
+      <Link
+        to="/contact"
+        className="link"
+        onClick={window.scrollTo({
+          top: 0,
+        })}
+      >
         <button className="get-in-touch-btn">GET IN TOUCH</button>
       </Link>
     </section>

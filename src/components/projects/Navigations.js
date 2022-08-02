@@ -8,9 +8,16 @@ const Navigations = ({ data, type }) => {
     <section className="navigation-projects">
       {data.map((e) => {
         if (e.type !== type) {
-          const { id, type, title, image } = e;
+          const { id, type, title } = e;
           return (
-            <Link key={id} to={`/projects/${type}`} className="link">
+            <Link
+              key={id}
+              to={`/projects/${type}`}
+              className="link"
+              onClick={window.scrollTo({
+                top: 0,
+              })}
+            >
               <div className={`navigation ${type}`}>
                 <h1>{title}</h1>
 

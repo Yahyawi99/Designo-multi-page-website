@@ -15,7 +15,12 @@ const Header = ({ logo, name, showNav, setShowNav }) => {
       </Link>
 
       <nav className={`navbar ${showNav && "show-navbar"}`}>
-        <ul className="links">
+        <ul
+          className="links"
+          onClick={window.scrollTo({
+            top: 0,
+          })}
+        >
           <Link to="/about" className="link">
             <li>OUR COMPANY</li>
           </Link>

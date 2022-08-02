@@ -16,7 +16,13 @@ const Locations = () => {
 
         <h1 className="country-name">CANADA</h1>
 
-        <Link to="/locations" className="link">
+        <Link
+          to="/locations"
+          className="link"
+          onClick={window.scrollTo({
+            top: 0,
+          })}
+        >
           <button className="see-btn">SEE LOCATION</button>
         </Link>
       </div>
@@ -31,7 +37,13 @@ const Locations = () => {
 
         <h1 className="country-name">AUSTRALIA</h1>
 
-        <Link to="/locations" className="link">
+        <Link
+          to="/locations"
+          className="link"
+          onClick={window.scrollTo({
+            top: 0,
+          })}
+        >
           <button className="see-btn">SEE LOCATION</button>
         </Link>
       </div>
@@ -46,7 +58,13 @@ const Locations = () => {
 
         <h1 className="country-name">UNITED KINGDOM</h1>
 
-        <Link to="/locations" className="link">
+        <Link
+          to="/locations"
+          className="link"
+          onClick={window.scrollTo({
+            top: 0,
+          })}
+        >
           <button className="see-btn">SEE LOCATION</button>
         </Link>
       </div>
