@@ -19,9 +19,11 @@ const Locations = () => {
         <Link
           to="/locations"
           className="link"
-          onClick={window.scrollTo({
-            top: 0,
-          })}
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+            })
+          }
         >
           <button className="see-btn">SEE LOCATION</button>
         </Link>
@@ -40,9 +42,11 @@ const Locations = () => {
         <Link
           to="/locations"
           className="link"
-          onClick={window.scrollTo({
-            top: 0,
-          })}
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+            })
+          }
         >
           <button className="see-btn">SEE LOCATION</button>
         </Link>
@@ -61,9 +65,11 @@ const Locations = () => {
         <Link
           to="/locations"
           className="link"
-          onClick={window.scrollTo({
-            top: 0,
-          })}
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+            })
+          }
         >
           <button className="see-btn">SEE LOCATION</button>
         </Link>

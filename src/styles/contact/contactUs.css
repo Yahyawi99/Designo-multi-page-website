@@ -39,6 +39,11 @@
     padding: 25px 75px 25px 0px;
 }
 
+
+.contact-form .email {
+    text-transform: lowercase;
+}
+
 .contact-form input,
 .contact-form textarea {
     width: 100%;
@@ -69,6 +74,7 @@
     color: var(--white);
     font-weight: 600;
     opacity: .4;
+    text-transform: initial;
 }
 
 .submit-btn {

@@ -1,13 +1,13 @@
 .navigation-projects {
     width: 85%;
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     gap: 25px;
     margin: 0px auto 150px auto;
 }
 
 .navigation {
+    max-width: 500px;
     color: var(--white);
     display: flex;
     flex-direction: column;
@@ -22,6 +22,7 @@
 }
 
 .navigation h1 {
+    text-align: center;
     font-size: 2.5rem;
     font-weight: 500;
     z-index: 10;
@@ -67,7 +68,7 @@
     .navigation-projects {
         width: 100%;
         flex-direction: column;
-        gap: 0px;
+        gap: 25px;
     }
 
     .navigation {

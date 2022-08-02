@@ -1,8 +1,20 @@
 import React from "react";
+import { useGlobal } from "../../context";
 // css
 import "../../styles/contact/contactUs.css";
 
 const ContactUs = () => {
+  const {
+    name,
+    setName,
+    email,
+    setEmail,
+    phone,
+    setPhone,
+    message,
+    setMessage,
+    submit,
+  } = useGlobal();
   return (
     <section className="contact-us">
       <div className="contact-txt">
@@ -16,17 +28,40 @@ const ContactUs = () => {
         </p>
       </div>
 
-      <form className="contact-form">
-        <input type="text" className="name" placeholder="Name" />
+      <form className="contact-form" onSubmit={(e) => submit(e)} noValidate>
+        <input
+          type="text"
+          className="name input"
+          placeholder="Name"
+          value={name}
+          onChange={(e) => setName(e.currentTarget.value)}
+        />
 
-        <input type="email" className="email" placeholder="Email Address" />
+        <input
+          type="email"
+          className="email input"
+          placeholder="Email Address"
+          value={email}
+          onChange={(e) => setEmail(e.currentTarget.value)}
+        />
 
-        <input type="text" className="phone" placeholder="Phone" />
+        <input
+          type="text"
+          className="phone input"
+          placeholder="Phone"
+          value={phone}
+          onChange={(e) => {
+            let value = e.currentTarget.value.replace(/\W|[a-z]+/gi, "");
+            setPhone(value);
+          }}
+        />
 
         <textarea
           name="message"
-          className="message"
+          className="message input"
           placeholder="Your Message"
+          value={message}
+          onChange={(e) => setMessage(e.currentTarget.value)}
         ></textarea>
 
         <button className="submit-btn">SUBMIT</button>

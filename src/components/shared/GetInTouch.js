@@ -19,9 +19,11 @@ const GetInTouch = () => {
       <Link
         to="/contact"
         className="link"
-        onClick={window.scrollTo({
-          top: 0,
-        })}
+        onClick={() =>
+          window.scrollTo({
+            top: 0,
+          })
+        }
       >
         <button className="get-in-touch-btn">GET IN TOUCH</button>
       </Link>

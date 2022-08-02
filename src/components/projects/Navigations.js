@@ -14,9 +14,11 @@ const Navigations = ({ data, type }) => {
               key={id}
               to={`/projects/${type}`}
               className="link"
-              onClick={window.scrollTo({
-                top: 0,
-              })}
+              onClick={() =>
+                window.scrollTo({
+                  top: 0,
+                })
+              }
             >
               <div className={`navigation ${type}`}>
                 <h1>{title}</h1>

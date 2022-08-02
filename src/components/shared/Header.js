@@ -6,7 +6,17 @@ import "../../styles/shared/header.css";
 const Header = ({ logo, name, showNav, setShowNav }) => {
   return (
     <header className={`header ${name}`}>
-      <Link to="/" className="link">
+      <Link
+        to="/"
+        className="link"
+        onClick={() => {
+          window.scrollTo({
+            top: 0,
+          });
+
+          setShowNav(false);
+        }}
+      >
         <img
           className="logo"
           src={`/assets/shared/desktop/${logo}`}
@@ -17,9 +27,13 @@ const Header = ({ logo, name, showNav, setShowNav }) => {
       <nav className={`navbar ${showNav && "show-navbar"}`}>
         <ul
           className="links"
-          onClick={window.scrollTo({
-            top: 0,
-          })}
+          onClick={() => {
+            window.scrollTo({
+              top: 0,
+            });
+
+            setShowNav(false);
+          }}
         >
           <Link to="/about" className="link">
             <li>OUR COMPANY</li>

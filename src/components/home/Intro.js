@@ -17,7 +17,14 @@ const Intro = () => {
           Find out more about our services.
         </p>
 
-        <Link to="/about">
+        <Link
+          to="/about"
+          onClick={() =>
+            window.scrollTo({
+              top: 0,
+            })
+          }
+        >
           <button type="button">LEARN MORE</button>
         </Link>
       </div>
